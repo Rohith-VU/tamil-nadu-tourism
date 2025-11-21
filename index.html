@@ -13,17 +13,18 @@
 
 <body>
 
-                                    <!-- Header -->
+    <!-- Header -->
     <header class="header-container">
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">Navbar scroll</a>
+        <nav class="navbar navbar-expand-lg navbar-header-container">
+            <div class="container-fluid ps-20px">
+                <a class="navbar-brand ps-5" href="#">Navbar scroll</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
                     aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarScroll">
-                    <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                    <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll nav-items-container"
+                        style="--bs-scroll-height: 100px;">
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
@@ -48,19 +49,142 @@
                             <a class="nav-link disabled" aria-disabled="true">Link</a>
                         </li>
                     </ul>
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-                        <button class="btn btn-outline-success" type="submit">Search</button>
-                    </form>
+                    <div class="input-div-container me-5">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                            viewBox="0 0 24 24"><!-- Icon from Material Symbols by Google - https://github.com/google/material-design-icons/blob/master/LICENSE -->
+                            <path fill="currentColor"
+                                d="m19.6 21l-6.3-6.3q-.75.6-1.725.95T9.5 16q-2.725 0-4.612-1.888T3 9.5t1.888-4.612T9.5 3t4.613 1.888T16 9.5q0 1.1-.35 2.075T14.7 13.3l6.3 6.3zM9.5 14q1.875 0 3.188-1.312T14 9.5t-1.312-3.187T9.5 5T6.313 6.313T5 9.5t1.313 3.188T9.5 14" />
+                        </svg>
+                        <input class="me-2 header-input" type="search" placeholder="Search" aria-label="Search" />
+                    </div>
                 </div>
             </div>
         </nav>
     </header>
 
-                                <!-- Hero Section -->
+    <!-- Hero Section -->
     <section>
         <div class="hero-section-container">
-            <img class="hero-image" src="https://www.indonesia.travel/contentassets/3a3b8f3f5b4d4011af5675f0dc1401c6/72.jpg" alt="">
+            <img class="hero-image"
+                src="https://www.indonesia.travel/contentassets/3a3b8f3f5b4d4011af5675f0dc1401c6/72.jpg" alt="">
+        </div>
+    </section>
+
+    <!-- FAQ Sections-->
+    <section>
+        <div class="faq-whole-wrapper">
+            <h1>
+                Frequently <br /> asked questions
+            </h1>
+
+            <div class="faq-container">
+
+
+                <div>
+                    <div class="accordion" id="accordionExample">
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne">
+                                    Accordion Item 1
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    This is the first accordion body.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo">
+                                    Accordion Item 2
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    This is the second accordion body.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo">
+                                    Accordion Item 2
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    This is the second accordion body.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo">
+                                    Accordion Item 2
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    This is the second accordion body.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo">
+                                    Accordion Item 2
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    This is the second accordion body.
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="questions-container">
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60"
+                            viewBox="0 0 24 24"><!-- Icon from Material Symbols Light by Google - https://github.com/google/material-design-icons/blob/master/LICENSE -->
+                            <path fill="currentColor" d="M3 20.077V3h18v14H6.077z" />
+                        </svg>
+
+                        <h2> Do you have more questions?</h2>
+
+                        <p class="faq-desc">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit impedit, quam labore
+                            voluptates, perspiciatis illo Lorem ipsum dolor sit, amet consectetur.
+                        </p>
+                    </div>
+                    <button class="faq-btn"> Ask me</button>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!--Packages Sections-->
+    <section>
+        <div>
+            <h1>Categories</h1>
+            
         </div>
     </section>
 
